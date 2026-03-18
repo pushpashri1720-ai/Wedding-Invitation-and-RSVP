@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ravi & Pushpa Wedding Invitation</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="page-shell">
+  <section id="home" class="hero-card">
+    <div class="hero-left">
+      <div class="hero-couple-names">
+        <h2>
+  <span class="name-line">Dendukuri Ravi Kiran Varma</span>
+  <span class="couple-and">&</span>
+  <span class="name-line">Penumatsa Pushpa Shri</span>
+</h2>        
+<p class ="hero-tagline">
+          We invite you to share our wedding day with us and help us create
+          an unforgettable celebration.
+        </p>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-info">
+        <div class="symbol-icons">
+          <span class="swastik">卐</span>
+          <span class="ganesh">॥ श्री गणेशाय नमः ॥</span>
+        </div>
+
+        <p class="hero-day">Sunday</p>
+        <h1 class="hero-date">May 10, 2026</h1>
+        <p class="hero-location">Hockessin, Delaware</p>
+
+        <button id="rsvpBtn" class="rsvp-btn" type="button">RSVP</button>
+        <a href="#schedule" id="viewDetailsBtn" class="view-details">View Details</a>
+        <div class="down-arrow">⌄</div>
+      </div>
+    </div>
+  </section>
+</div>
+  <section id="schedule" class="section-page">
+    <div class="section-header"> <button class="back-btn back-to-top-btn" type="button">Back to Top</button> </div>
+    <div class="details-image-wrapper"> <img src="./images/Invitation Letter.png" alt="Wedding Details"
+        class="details-full-image" /> </div>
+  </section>
+  <section id="rsvp" class="section-page">
+    <div class="section-header">
+      <h2>RSVP</h2> <button class="back-btn back-to-top-btn" type="button">Back to Top</button>
+    </div>
+    <div class="card form-card"> <label for="name">Name *</label> <input type="text" id="name"
+        placeholder="Enter your name" /> <label for="email">Email *</label> <input type="email" id="email"
+        placeholder="Enter your email" /> 
+       <label for="attending">Attending? *</label>
+<select id="attending">
+  <option value="">Select an option</option>
+  <option value="Yes">Yes ❤️</option>
+  <option value="Maybe">Maybe 🙂</option>
+  <option value="No">No 😔</option>
+</select>
+
+<div id="extraQuestions" class="hidden-block">
+  <label for="comingWithYou">Your plus ones *</label>
+  <select id="comingWithYou">
+    <option value="">Select an option</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <div id="guestCountBlock" class="hidden-block">
+    <label for="guests">Number of Guests *</label>
+    <select id="guests">
+      <option value="">Select number of guests</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+      <option value="10">10</option>
+    </select>
+  </div>
+
+  <div id="guestNamesBlock" class="hidden-block"></div>
+
+  <label for="accommodation">Do you need accommodation? *</label>
+  <select id="accommodation">
+    <option value="">Select an option</option>
+    <option value="Yes">Yes</option>
+    <option value="No">No</option>
+  </select>
+
+  <div id="arrivalBlock" class="hidden-block">
+    <label for="arrival">When will you arrive? (Date and Time) *</label>
+    <input type="datetime-local" id="arrival" />
+  </div>
+</div>
+      
+      <button id="submitRsvpBtn" class="submit-btn" type="button">Submit RSVP</button>
+      <p id="rsvpMessage" class="message"></p>
+    </div>
+  </section>
+  <script src="./Javascript/javascript.js"></script>
+</body>
+
+</html>
